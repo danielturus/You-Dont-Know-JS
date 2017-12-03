@@ -1,11 +1,11 @@
 # Nu știți JS: Up & Going
 # Capitolul 1: În ale programării
 
-Bine ați venit în seria * Nu știți JS * (* YDKJS *).
+Bine ați venit în seria *Nu știți JS* (*YDKJS*).
 
 *Up & Going* este o introducere a câtorva concepte de bază ale programării - desigur, ne bazăm pe JavaScript (adesea abreviat JS) în mod specific - și cum să abordăm și să înțelegem restul titlurilor din această serie. Mai ales dacă doar ce ai intrat în programare și / sau în JavaScript, această carte va explora pe scurt ceea ce ai nevoie pentru a  porni la drum (*up and going*).
 
-Această carte începe prin a explica principiile de bază ale programării la un nivel foarte ridicat. Este destinată cel mai mult dacă începeți * YDKJS * cu zero sau puțină experiență de programare anterioară și căutați în această carte un drum, o cărare în înțelegerea programării prin intermediul lentilelor JavaScript.
+Această carte începe prin a explica principiile de bază ale programării la un nivel foarte ridicat. Este destinată cel mai mult dacă începeți *YDKJS* cu zero sau puțină experiență de programare anterioară și căutați în această carte un drum, o cărare în înțelegerea programării prin intermediul lentilelor JavaScript.
 
 Chapter 1 should be approached as a quick overview of the things you'll want to learn more about and practice to get *into programming*. There are also many other fantastic programming introduction resources that can help you dig into these topics further, and I encourage you to learn from them in addition to this chapter.
 
