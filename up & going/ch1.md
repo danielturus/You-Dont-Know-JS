@@ -7,39 +7,39 @@ Bine ați venit în seria *Nu știți JS* (*YDKJS*).
 
 Această carte începe prin a explica principiile de bază ale programării la un nivel foarte ridicat. Este destinată cel mai mult dacă începeți *YDKJS* cu zero sau puțină experiență de programare anterioară și căutați în această carte un drum, o cărare în înțelegerea programării prin intermediul lentilelor JavaScript.
 
-Chapter 1 should be approached as a quick overview of the things you'll want to learn more about and practice to get *into programming*. There are also many other fantastic programming introduction resources that can help you dig into these topics further, and I encourage you to learn from them in addition to this chapter.
+Capitolul 1 ar trebui să fie abordat ca o prezentare rapidă a lucrurilor despre care doriți să  învățați mai multe și să o exersați pentru a *intra  în ale programării*. Există, de asemenea, multe alte resurse fantastice de introducere în programare, care vă pot ajuta să explorați în continuare aceste subiecte și vă încurajez să învățați și de la acestea ca supliment la acest capitol.
 
-Once you feel comfortable with general programming basics, Chapter 2 will help guide you to a familiarity with JavaScript's flavor of programming. Chapter 2 introduces what JavaScript is about, but again, it's not a comprehensive guide -- that's what the rest of the *YDKJS* books are for!
+Odată ce vă simțiți confortabil cu elementele de bază ale programării generale, Capitolul 2 vă va ajuta să vă familiarizați cu "aroma" de programare a JavaScript-ului. Capitolul 2 prezintă despre ce este vorba JavaScript, dar din nou, nu este un ghid cuprinzător - pentru asta există restul cărților *YDKJS*!
 
-If you're already fairly comfortable with JavaScript, first check out Chapter 3 as a brief glimpse of what to expect from *YDKJS*, then jump right in!
+Dacă sunteți deja destul de confortabil cu JavaScript, mai întâi verificați capitolul 3 ca o scurtă privire a ceea ce să așteptați de la *YDKJS*, apoi puteți începe direct!
 
-## Code
+## Codul
 
-Let's start from the beginning.
+Să începem cu începutul.
 
-A program, often referred to as *source code* or just *code*, is a set of special instructions to tell the computer what tasks to perform. Usually code is saved in a text file, although with JavaScript you can also type code directly into a developer console in a browser, which we'll cover shortly.
+Un program, denumit adesea *cod sursă* sau doar *cod*, este un set de instrucțiuni speciale pentru a spune computerului ce sarcini să efectueze. De obicei, codul este salvat într-un fișier text, deși cu JavaScript puteți tasta și cod direct într-o consolă de dezvoltator într-un browser, despre care vom vorbi în scurt timp.
 
-The rules for valid format and combinations of instructions is called a *computer language*, sometimes referred to as its *syntax*, much the same as English tells you how to spell words and how to create valid sentences using words and punctuation.
+Regulile pentru formatul valid și combinațiile de instrucțiuni se numește *limbaj de calculator*, denumit uneori *sintaxă*, la fel ca engleza vă spune cum să scrieți cuvintele și cum să creați propoziții valide utilizând cuvinte și punctuație.
 
-### Statements
+### Declarații
 
-In a computer language, a group of words, numbers, and operators that performs a specific task is a *statement*. In JavaScript, a statement might look as follows:
+Într-un limbaj de calculator, un grup de cuvinte, numere și operatori care efectuează o anumită sarcină este o *declarație*. În JavaScript, o declarație ar putea arăta după cum urmează:
 
 ```js
 a = b * 2;
 ```
 
-The characters `a` and `b` are called *variables* (see "Variables"), which are like simple boxes you can store any of your stuff in. In programs, variables hold values (like the number `42`) to be used by the program. Think of them as symbolic placeholders for the values themselves.
+Caracterele `a` și` b` se numesc *variabile* (vezi "Variabile"), care sunt ca niște cutii simple in care puteți stoca oricare dintre lucrurile dvs. În cazul programelor, variabilele dețin valori (cum ar fi numărul 42) pentru a fi utilizate de program. Gândiți-vă la ele ca la niște substituienți simbolici pentru valorile în sine.
 
-By contrast, the `2` is just a value itself, called a *literal value*, because it stands alone without being stored in a variable.
+Prin contrast, `2` este doar o valoare în sine, numită *valoare literală*, deoarece se află singură fără a fi stocată într-o variabilă.
 
-The `=` and `*` characters are *operators* (see "Operators") -- they perform actions with the values and variables such as assignment and mathematic multiplication.
+Caracterele `=` și `*` sunt *operatori* (vezi "Operatori") - aceștia efectuează acțiuni cu valori și variabile cum ar fi asignarea și înmulțirea matematică.
 
-Most statements in JavaScript conclude with a semicolon (`;`) at the end.
+Cele mai multe instrucțiuni din JavaScript se încheie cu un punct și virgulă (`;`) la sfârșit.
 
-The statement `a = b * 2;` tells the computer, roughly, to get the current value stored in the variable `b`, multiply that value by `2`, then store the result back into another variable we call `a`.
+Instrucțiunea "a = b * 2;" indică calculatorului, aproximativ, să ia valoarea curentă stocată în variabila "b", să multiplice acea valoare cu "2", apoi să stocheze rezultatul înapoi într-o altă variabilă numită "a".
 
-Programs are just collections of many such statements, which together describe all the steps that it takes to perform your program's purpose.
+Programele sunt doar colecții de declarații ca cea de mai sus, care împreună descriu toți pașii necesari pentru a realiza scopul programului.
 
 ### Expressions
 
