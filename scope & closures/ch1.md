@@ -1,27 +1,29 @@
 # You Don't Know JS: Scope & Closures
 # Chapter 1: What is Scope?
 
-One of the most fundamental paradigms of nearly all programming languages is the ability to store values in variables, and later retrieve or modify those values. In fact, the ability to store values and pull values out of variables is what gives a program *state*.
+Una dintre cele mai fundamentale paradigme ale aproape tuturor limbajelor de programare este abilitatea de a stoca valori în variabile și de a recupera sau modifica mai târziu aceste valori. De fapt, capacitatea de a stoca valori și de a retrage valori din variabile este ceea ce dă programului un `state` - adică o *stare*.
 
-Without such a concept, a program could perform some tasks, but they would be extremely limited and not terribly interesting.
+Fără un astfel de concept, un program ar putea îndeplini anumite sarcini, dar ar fi extrem de limitat și nu ar fi interesant.
 
-But the inclusion of variables into our program begets the most interesting questions we will now address: where do those variables *live*? In other words, where are they stored? And, most importantly, how does our program find them when it needs them?
 
-These questions speak to the need for a well-defined set of rules for storing variables in some location, and for finding those variables at a later time. We'll call that set of rules: *Scope*.
+Însă includerea variabilelor în programul nostru generează cele mai interesante întrebări pe care le vom adresa acum: unde *trăiesc* aceste variabile ? Cu alte cuvinte, unde sunt stocate? Și, cel mai important, cum arată programul nostru când are nevoie de ele?
 
-But, where and how do these *Scope* rules get set?
+Aceste întrebări vorbesc despre necesitatea unui set bine definit de reguli pentru stocarea variabilelor într-o anumită locație și pentru găsirea acelor variabile ulterior. Vom numi setul de reguli: *Scope* adică `domeniul de aplicare`.
 
-## Compiler Theory
+Dar unde și cum se stabilesc aceste reguli de `scope`?
 
-It may be self-evident, or it may be surprising, depending on your level of interaction with various languages, but despite the fact that JavaScript falls under the general category of "dynamic" or "interpreted" languages, it is in fact a compiled language. It is *not* compiled well in advance, as are many traditionally-compiled languages, nor are the results of compilation portable among various distributed systems.
+## Teoria compilatoarelor
 
-But, nevertheless, the JavaScript engine performs many of the same steps, albeit in more sophisticated ways than we may commonly be aware, of any traditional language-compiler.
+Poate fi evidentă sau poate fi surprinzătoare, în funcție de nivelul dvs. de interacțiune cu diferite limbaje de programare, dar, în ciuda faptului că JavaScript se încadrează în categoria generală de limbaje "dinamice" sau "interpretate", este, de fapt, un limbaj de programare compilat. Nu e compilat bine în avans, așa cum sunt multe alte limbaje compilate în mod tradițional, și nici rezultatele compilării nu sunt portabile între diferite sisteme distribuite.
 
-In traditional compiled-language process, a chunk of source code, your program, will undergo typically three steps *before* it is executed, roughly called "compilation":
+Dar, cu toate acestea, motorul JavaScript efectuează aceiași pași, chiar dacă în moduri mai sofisticate decât cele pe care le putem cunoaște în mod obișnuit, de orice compilator de limbaje de programare tradiționale.
 
-1. **Tokenizing/Lexing:** breaking up a string of characters into meaningful (to the language) chunks, called tokens. For instance, consider the program: `var a = 2;`. This program would likely be broken up into the following tokens: `var`, `a`, `=`, `2`, and `;`. Whitespace may or may not be persisted as a token, depending on whether it's meaningful or not.
+Într-un proces de compilare al unui limbaj de programare tradițional, o bucată de cod sursă, programul dvs., va fi supusă în mod obișnuit unor trei pași înainte de a fi executată, denumită popular "compilare":
 
-    **Note:** The difference between tokenizing and lexing is subtle and academic, but it centers on whether or not these tokens are identified in a *stateless* or *stateful* way. Put simply, if the tokenizer were to invoke stateful parsing rules to figure out whether `a` should be considered a distinct token or just part of another token, *that* would be **lexing**.
+1. **Tokenizarea/Lexing:** separarea unui sir de caractere în bucăți inteligibile de către cod, numite tokene. De exemplu, consideră următorul program: `var a = 2;`. Acest program va fi cel mai probabil separat în următoarele tokene: `var`, `a`, `=`, `2`, și `;`. Spațiul alb poate sau nu să fie perceput ca fiind un token, depinzând de semnificația lui.
+
+    **Notă:** Diferența dintre tokenizare și lexThe difference between tokenizing and lexing e subtilă și academică, dar se concentrează asupra faptului dacă aceste tokene sunt sau nu identificate într-un mod *stateless* sau *stateful* . Cu alte cuvinte, daca tokenizer-ul ar trebui să invoce reguli *stateful* de parsare pentru a înțelege dacă `a` ar trebui considerat un token disctinct sau o parte dintr-un alt token, *aceasta* ar fi **lexing**
+    
 
 2. **Parsing:** taking a stream (array) of tokens and turning it into a tree of nested elements, which collectively represent the grammatical structure of the program. This tree is called an "AST" (<b>A</b>bstract <b>S</b>yntax <b>T</b>ree).
 
